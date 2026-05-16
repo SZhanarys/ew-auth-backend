@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ew-auth-backend
+
+  datasource:
+    # URL вашей базы данных. Убедитесь, что база ew-auth_db создана в PostgreSQL.
+    url: jdbc:postgresql://localhost:5432/ew-auth_db
+    username: postgres
+    # Впишите пароль пользователя postgres
+    password: SZGzhako2010
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      # Автоматически создает или обновляет таблицы при запуске приложения
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
